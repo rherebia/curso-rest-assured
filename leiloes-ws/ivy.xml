@@ -11,7 +11,6 @@
 
 	<dependencies>
 		<dependency org="br.com.caelum" name="vraptor" rev="3.4.0" conf="default" />
-		<dependency org="org.hsqldb" name="hsqldb" rev="2.2.4" conf="default" />
 		<dependency org="opensymphony" name="sitemesh" rev="2.4.2" conf="default" />
 		<dependency org="javax.servlet" name="jstl" rev="1.2" conf="default" />
 		<dependency org="org.hibernate" name="hibernate-entitymanager" rev="3.6.7.Final" conf="default" />
@@ -28,6 +27,7 @@
 		<dependency org="junit" name="junit" rev="4.10" conf="test->default" />
 		<dependency org="org.hamcrest" name="hamcrest-all" rev="1.1" conf="test->default" />
 		<dependency org="org.mockito" name="mockito-all" rev="1.8.5" conf="test->default" />
+		<dependency org="com.jayway.restassured" name="rest-assured" rev="2.9.0" conf="test->default"/>
 
 		<!-- Jetty dependencies -->
 		<dependency org="org.mortbay.jetty" name="jsp-api-2.1" rev="6.1.14" conf="jetty->default" />

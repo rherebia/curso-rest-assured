@@ -1,19 +1,14 @@
-package app.models;
+package br.com.caelum.leilao.modelo;
+
 
 import java.util.Calendar;
 
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+public class Lance{
 
-@javax.persistence.Entity
-public class Lance extends Entity{
-
+	private Long id;
 	private double valor;
 	private Calendar data;
-	@OneToOne(fetch=FetchType.EAGER)
 	private Usuario usuario;
-	@ManyToOne
 	private Leilao leilao;
 
 	public double getValor() {
@@ -40,6 +35,11 @@ public class Lance extends Entity{
 	public void setLeilao(Leilao leilao) {
 		this.leilao = leilao;
 	}
-	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	
 }
